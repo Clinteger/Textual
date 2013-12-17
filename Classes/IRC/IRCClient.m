@@ -2473,7 +2473,7 @@
 			
 			for (IRCClient *client in [self.worldController clients]) {
 				for (IRCChannel *channel in [client channels]) {
-					NSString *name = [channel.name stringByDeletingAllCharactersNotInSet:TXWesternAlphabetIncludingUnderscoreDashCharacaterSet];
+					NSString *name = [channel.name stringByDeletingAllCharactersNotInSet:TXWesternAlphabetIncludingUnderscoreDashCharacterSet];
 
 					CGFloat score = [name compareWithWord:uncutInput lengthPenaltyWeight:0.1];
 					
